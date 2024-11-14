@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+}
+
+body {
+    background-image: url('gambar/bg1.png');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+.containernav {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(90deg, #86AEE2 0%, #608BC1 50%, #5B85BA 100%);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.logo img {
+    height: 70px;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin-left: 700px;
+    gap: 30px;
+}
+
+.menu ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu ul li a:hover, .menu ul li a:active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.back {
+    display: flex;
+    width: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 75%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table tr td:first-child,
+table tr td:nth-child(2),
+table tr td:nth-child(3) {
+    background-color: rgb(252, 248, 251);
+}
+
+table th:nth-child(1),
+table th:nth-child(2),
+table th:nth-child(3) {
+    background-color: #C8A2D1;
+    color: #fff;
+    font-weight: bold;
+}
+
+table tr:first-child td {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+table td, table th {
+    padding: 8px;
+    text-align: left;
+}
+
+table tr:first-child td {
+    border-top: 2px solid black;
+}
+
+table tr:first-child td:last-child {
+    border-bottom: none;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e2e2e2;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background-color: #001f3f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.logofooter img {
+    width: 80px;
+    height: auto;
+}
+
+/* Media Queries for Responsiveness */
+
+@media only screen and (max-width: 1200px) {
+    .menu ul {
+        margin-left: 300px; /* Adjust menu spacing for smaller screens */
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    table {
+        width: 90%; /* Make table take more width */
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .menu ul {
+        margin-left: 100px; /* Further reduce menu spacing */
+    }
+
+    .menu ul li a {
+        font-size: 18px; /* Reduce font size on smaller screens */
+    }
+
+    .containernav {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+    }
+
+    .logo img {
+        height: 50px; /* Logo smaller on medium screens */
+    }
+
+    table {
+        width: 100%; /* Make table 100% width on smaller screens */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 22px; /* Reduce font size for header */
+    }
+
+    .menu ul li a {
+        font-size: 16px; /* Further reduce font size */
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .containernav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 40px; /* Logo even smaller on small screens */
+    }
+
+    table {
+        width: 100%;
+        margin-top: 20px; /* Add margin on top of table */
+    }
+
+    .back {
+        width: 25px; /* Make back button smaller */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .menu ul li a {
+        font-size: 14px; /* Smallest font size for menu items */
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .logofooter img {
+        width: 60px; /* Smaller logo in footer */
+    }
+
+    .social-icons img {
+        width: 40px; /* Smaller social icons */
+    }
+
+    h1 {
+        font-size: 20px; /* Reduce header font size on very small screens */
+    }
+
+    table td, table th {
+        padding: 6px; /* Smaller padding for table cells */
+    }
+
+    .back {
+        width: 20px; /* Even smaller back button */
+    }
+}
